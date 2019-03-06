@@ -9,7 +9,8 @@ def list_files(startpath):
 #        print('{}{}/'.format(indent, os.path.basename(root)))
         subindent = ' ' * 4 * (level + 1)
         for f in files:
-            lst.append('{}{}'.format(subindent, f))
+            if 'spec' not in f and 'readme' not in f.lower() and 'license' not in f.lower():
+                lst.append('{}{}'.format(subindent, f))
 #            print('{}{}'.format(subindent, f))
     string = '\n'.join(lst)
     with open("structure.txt", "w") as file:
