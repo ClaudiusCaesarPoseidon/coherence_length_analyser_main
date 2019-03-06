@@ -5,7 +5,10 @@ def list_files(startpath):
     for root, dirs, files in os.walk(startpath):
         level = root.replace(startpath, '').count(os.sep)
         indent = ' ' * 4 * (level)
-        lst.append('{}{}/'.format(indent, os.path.basename(root)))
+        if 'git' not in root.lower():
+            lst.append('{}{}/'.format(indent, os.path.basename(root)))
+        else:
+            continue
 #        print('{}{}/'.format(indent, os.path.basename(root)))
         subindent = ' ' * 4 * (level + 1)
         for f in files:
@@ -15,5 +18,7 @@ def list_files(startpath):
     string = '\n'.join(lst)
     with open("structure.txt", "w") as file:
         file.write(string)
+    print(string)
 
-list_files(r"C:\Users\Haarmeyer\Desktop\git\coherence_length_analyser\coherence_length_analyser")
+list_files(r"I:\Arbeit\coherence_length_analyser_main")
+

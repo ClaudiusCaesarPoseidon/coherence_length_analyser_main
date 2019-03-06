@@ -391,12 +391,12 @@
        </item>
        <item>
         <property name="text">
-         <string>Savitzky–Golay filter</string>
+         <string>Savitzky-Golay filter</string>
         </property>
        </item>
        <item>
         <property name="text">
-         <string>M_a + S–G</string>
+         <string>M_a + S-G</string>
         </property>
        </item>
        <item>
