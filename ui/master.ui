@@ -46,8 +46,8 @@
      <property name="spacing">
       <number>0</number>
      </property>
-     <item row="0" column="3">
-      <widget class="QPushButton" name="Register">
+     <item row="0" column="1">
+      <widget class="QPushButton" name="Evaluate">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -55,13 +55,7 @@
         </sizepolicy>
        </property>
        <property name="text">
-        <string>Register</string>
-       </property>
-       <property name="autoDefault">
-        <bool>true</bool>
-       </property>
-       <property name="flat">
-        <bool>false</bool>
+        <string>Evaluate Angle</string>
        </property>
       </widget>
      </item>
@@ -78,19 +72,6 @@
        </property>
        <property name="autoDefault">
         <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="1">
-      <widget class="QPushButton" name="Evaluate">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="text">
-        <string>Evaluate Angle</string>
        </property>
       </widget>
      </item>
@@ -146,9 +127,6 @@
      <property name="spacing">
       <number>0</number>
      </property>
-     <item row="0" column="0">
-      <widget class="QTextEdit" name="Console"/>
-     </item>
     </layout>
    </item>
   </layout>
@@ -157,7 +135,6 @@
   <tabstop>Take_Pictures</tabstop>
   <tabstop>Analyse_Pictures</tabstop>
   <tabstop>Close</tabstop>
-  <tabstop>Register</tabstop>
  </tabstops>
  <resources/>
  <connections/>

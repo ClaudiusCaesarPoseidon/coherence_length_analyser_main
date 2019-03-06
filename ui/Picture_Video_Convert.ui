@@ -60,36 +60,7 @@
      <property name="spacing">
       <number>0</number>
      </property>
-     <item row="9" column="0">
-      <widget class="QLineEdit" name="CustomFunction">
-       <property name="enabled">
-        <bool>false</bool>
-       </property>
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="0">
-      <widget class="QPushButton" name="Start">
-       <property name="enabled">
-        <bool>false</bool>
-       </property>
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="text">
-        <string>Start</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="0">
+     <item row="1" column="0">
       <widget class="QPushButton" name="Mirror_Image">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
@@ -105,20 +76,7 @@
        </property>
       </widget>
      </item>
-     <item row="8" column="0">
-      <widget class="QLineEdit" name="Password">
-       <property name="enabled">
-        <bool>false</bool>
-       </property>
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="0">
+     <item row="4" column="0">
       <widget class="QPushButton" name="Convert_All">
        <property name="enabled">
         <bool>false</bool>
@@ -134,7 +92,7 @@
        </property>
       </widget>
      </item>
-     <item row="6" column="0">
+     <item row="5" column="0">
       <widget class="QComboBox" name="Windows">
        <property name="enabled">
         <bool>false</bool>
@@ -178,21 +136,9 @@
          <string>Slepian</string>
         </property>
        </item>
-       <item>
-        <property name="text">
-         <string>Custom</string>
-        </property>
-       </item>
       </widget>
      </item>
-     <item row="7" column="0">
-      <widget class="QLineEdit" name="Name">
-       <property name="enabled">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="0">
+     <item row="2" column="0">
       <widget class="QPushButton" name="Subtract_Background">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
@@ -205,6 +151,22 @@
        </property>
        <property name="checkable">
         <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QPushButton" name="Close">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Close</string>
        </property>
       </widget>
      </item>
@@ -221,8 +183,8 @@
        </property>
       </widget>
      </item>
-     <item row="10" column="0">
-      <widget class="QPushButton" name="Close">
+     <item row="3" column="0">
+      <widget class="QPushButton" name="Start">
        <property name="enabled">
         <bool>false</bool>
        </property>
@@ -233,23 +195,7 @@
         </sizepolicy>
        </property>
        <property name="text">
-        <string>Close</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="0">
-      <widget class="QPushButton" name="Switch">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="text">
-        <string>One/All</string>
-       </property>
-       <property name="checkable">
-        <bool>true</bool>
+        <string>Start</string>
        </property>
       </widget>
      </item>
@@ -261,9 +207,6 @@
   <tabstop>ChooseFolder</tabstop>
   <tabstop>Start</tabstop>
   <tabstop>Windows</tabstop>
-  <tabstop>Name</tabstop>
-  <tabstop>Password</tabstop>
-  <tabstop>CustomFunction</tabstop>
   <tabstop>Close</tabstop>
   <tabstop>Console</tabstop>
  </tabstops>

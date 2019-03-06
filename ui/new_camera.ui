@@ -218,36 +218,17 @@ saved:	None		saved:	None	White:	None</string>
         <number>0</number>
        </property>
        <item row="0" column="0">
-        <widget class="QPushButton" name="Get_Maximum">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
          </property>
-         <property name="text">
-          <string>Get Maximum</string>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
          </property>
-         <property name="autoDefault">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="1">
-        <widget class="QPushButton" name="Get_White">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="text">
-          <string>Get White</string>
-         </property>
-         <property name="autoDefault">
-          <bool>true</bool>
-         </property>
-        </widget>
+        </spacer>
        </item>
       </layout>
      </item>
@@ -337,44 +318,6 @@ saved:	None		saved:	None	White:	None</string>
          <property name="spacing">
           <number>0</number>
          </property>
-         <item row="4" column="1">
-          <widget class="LineEdit" name="Angle">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">border: None</string>
-           </property>
-           <property name="text">
-            <string>None</string>
-           </property>
-           <property name="readOnly">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-         <item row="5" column="1">
-          <widget class="LineEdit" name="Lines">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">border: None</string>
-           </property>
-           <property name="text">
-            <string>None</string>
-           </property>
-           <property name="readOnly">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
          <item row="2" column="0" colspan="2">
           <layout class="QGridLayout" name="gridLayout_4">
            <property name="spacing">
@@ -456,50 +399,6 @@ saved:	None		saved:	None	White:	None</string>
            </item>
           </layout>
          </item>
-         <item row="5" column="0">
-          <widget class="LineEdit" name="Lines_Text">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">border: None</string>
-           </property>
-           <property name="text">
-            <string>Number of lines:</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-           </property>
-           <property name="readOnly">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-         <item row="4" column="0">
-          <widget class="LineEdit" name="Angle_Text">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">border: None</string>
-           </property>
-           <property name="text">
-            <string>Angle:</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-           </property>
-           <property name="readOnly">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
          <item row="0" column="0" colspan="2">
           <layout class="QGridLayout" name="gridLayout_3">
            <property name="spacing">
@@ -523,6 +422,66 @@ saved:	None		saved:	None	White:	None</string>
               <property name="spacing">
                <number>0</number>
               </property>
+              <item row="0" column="0" rowspan="9">
+               <widget class="PushButton" name="Accept_Parameter">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string>Accept Parameter</string>
+                </property>
+                <property name="autoDefault">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="8" column="1">
+               <widget class="PushButton" name="Reset">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string>Reset</string>
+                </property>
+                <property name="autoDefault">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="1">
+               <widget class="LineEdit" name="Number_Of_Measurements_Text">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">border: None</string>
+                </property>
+                <property name="text">
+                 <string>Number of Measurements:</string>
+                </property>
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+                <property name="placeholderText">
+                 <string>Number of Measurements (default: 1)</string>
+                </property>
+               </widget>
+              </item>
               <item row="2" column="1">
                <widget class="LineEdit" name="Temperature">
                 <property name="sizePolicy">
@@ -533,6 +492,49 @@ saved:	None		saved:	None	White:	None</string>
                 </property>
                 <property name="placeholderText">
                  <string>Temperature in °C</string>
+                </property>
+               </widget>
+              </item>
+              <item row="6" column="1">
+               <widget class="QSpinBox" name="Number_Of_Measurements">
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="minimum">
+                 <number>1</number>
+                </property>
+               </widget>
+              </item>
+              <item row="7" column="1">
+               <widget class="ComboBox" name="Mode">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>Forward</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Backward</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="4" column="1">
+               <widget class="LineEdit" name="Max_Width">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="placeholderText">
+                 <string>Total Length to be analysed in µm</string>
                 </property>
                </widget>
               </item>
@@ -575,119 +577,6 @@ saved:	None		saved:	None	White:	None</string>
                 </property>
                </widget>
               </item>
-              <item row="7" column="1">
-               <widget class="ComboBox" name="Mode">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <item>
-                 <property name="text">
-                  <string>Forward</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Backward</string>
-                 </property>
-                </item>
-               </widget>
-              </item>
-              <item row="9" column="1">
-               <widget class="PushButton" name="Reset">
-                <property name="enabled">
-                 <bool>false</bool>
-                </property>
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="text">
-                 <string>Reset</string>
-                </property>
-                <property name="autoDefault">
-                 <bool>true</bool>
-                </property>
-               </widget>
-              </item>
-              <item row="4" column="1">
-               <widget class="LineEdit" name="Max_Width">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="placeholderText">
-                 <string>Total Length to be analysed in µm</string>
-                </property>
-               </widget>
-              </item>
-              <item row="0" column="0" rowspan="10">
-               <widget class="PushButton" name="Accept_Parameter">
-                <property name="enabled">
-                 <bool>false</bool>
-                </property>
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="text">
-                 <string>Accept Parameter</string>
-                </property>
-                <property name="autoDefault">
-                 <bool>true</bool>
-                </property>
-               </widget>
-              </item>
-              <item row="6" column="1">
-               <widget class="QSpinBox" name="Number_Of_Measurements">
-                <property name="styleSheet">
-                 <string notr="true"/>
-                </property>
-                <property name="minimum">
-                 <number>1</number>
-                </property>
-               </widget>
-              </item>
-              <item row="5" column="1">
-               <widget class="LineEdit" name="Number_Of_Measurements_Text">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">border: None</string>
-                </property>
-                <property name="text">
-                 <string>Number of Measurements:</string>
-                </property>
-                <property name="readOnly">
-                 <bool>true</bool>
-                </property>
-                <property name="placeholderText">
-                 <string>Number of Measurements (default: 1)</string>
-                </property>
-               </widget>
-              </item>
-              <item row="8" column="1">
-               <widget class="QSpinBox" name="Sleep_Time">
-                <property name="minimum">
-                 <number>1</number>
-                </property>
-                <property name="maximum">
-                 <number>500</number>
-                </property>
-               </widget>
-              </item>
              </layout>
             </widget>
            </item>
@@ -705,26 +594,7 @@ saved:	None		saved:	None	White:	None</string>
             </sizepolicy>
            </property>
            <property name="text">
-            <string>Reset Lines To None</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="1">
-          <widget class="ToolButton" name="Right">
-           <property name="enabled">
-            <bool>false</bool>
-           </property>
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="text">
-            <string>...</string>
-           </property>
-           <property name="arrowType">
-            <enum>Qt::RightArrow</enum>
+            <string>Reset To None</string>
            </property>
           </widget>
          </item>
@@ -744,6 +614,25 @@ saved:	None		saved:	None	White:	None</string>
            </property>
            <property name="arrowType">
             <enum>Qt::LeftArrow</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="ToolButton" name="Right">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+           <property name="arrowType">
+            <enum>Qt::RightArrow</enum>
            </property>
           </widget>
          </item>

@@ -10,8 +10,8 @@ from coherence_length_analyser.lib import main_init
 main_init.main_init()
 
 from coherence_length_analyser.lib import functions
-from coherence_length_analyser.modules.eigen_widgets import screen_size_dialog
-from coherence_length_analyser.modules.eigen_widgets import Command_Line_Arguments
+from coherence_length_analyser.modules.widgets import screen_size_dialog
+from coherence_length_analyser.modules.widgets import Command_Line_Arguments
 from coherence_length_analyser.modules.master import Master
 from screeninfo import get_monitors
 from distutils.util import strtobool as s2b
