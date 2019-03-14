@@ -133,7 +133,7 @@
        </item>
        <item>
         <property name="text">
-         <string>Slepian</string>
+         <string>Dolph-Chebyshev</string>
         </property>
        </item>
       </widget>
