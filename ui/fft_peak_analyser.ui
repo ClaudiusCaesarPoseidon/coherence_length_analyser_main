@@ -9,7 +9,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1754</width>
+    <width>1703</width>
     <height>900</height>
    </rect>
   </property>
@@ -213,7 +213,7 @@
        </item>
        <item>
         <property name="text">
-         <string>Hamming</string>
+         <string>Bohman</string>
         </property>
        </item>
        <item>
@@ -223,7 +223,7 @@
        </item>
        <item>
         <property name="text">
-         <string>Slepian</string>
+         <string>Dolph-Chebyshev</string>
         </property>
        </item>
       </widget>
