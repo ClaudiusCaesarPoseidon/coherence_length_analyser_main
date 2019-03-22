@@ -96,7 +96,7 @@
         </sizepolicy>
        </property>
        <property name="currentIndex">
-        <number>4</number>
+        <number>0</number>
        </property>
        <property name="maxVisibleItems">
         <number>15</number>
@@ -118,7 +118,7 @@
        </item>
        <item>
         <property name="text">
-         <string>Hamming</string>
+         <string>Bohman</string>
         </property>
        </item>
        <item>
@@ -128,12 +128,7 @@
        </item>
        <item>
         <property name="text">
-         <string>Slepian</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>Custom</string>
+         <string>Dolph-Chebyshev</string>
         </property>
        </item>
       </widget>
