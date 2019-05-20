@@ -16,3 +16,7 @@ for item in tmp:
         temp = item.split(".")[0]
         temp = "modules.modules_camera." + temp
         hiddenimports.append(temp)
+
+import site
+
+tmp = site.getusersitepackages()
